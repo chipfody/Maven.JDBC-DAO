@@ -1,21 +1,22 @@
-public class DAOModel {
-    private static Integer id;
-    private static String make;
-    private static String model;
-    private static String year;
-    private static String color;
+public class DAOCarModel {
+    private Integer id;
+    private String make;
+    private String model;
+    private String year;
+    private String color;
 
-    public DAOModel(Integer id, String make, String model, String year, String color) {
+    public DAOCarModel(Integer id, String make, String model, String year, String color) {
         this.id = id;
         this.make = make;
         this.model = model;
         this.year = year;
         this.color = color;
     }
-    public DAOModel(Integer id){
-        this.id = id;
 
-        }
+    public DAOCarModel() {
+
+    }
+
     public Integer getId() {
         return id;
     }
@@ -24,7 +25,7 @@ public class DAOModel {
         this.id = id;
     }
 
-    public static String getMake() {
+    public String getMake() {
         return make;
     }
 
@@ -32,7 +33,7 @@ public class DAOModel {
         this.make = make;
     }
 
-    public static String getModel() {
+    public String getModel() {
         return model;
     }
 
@@ -40,7 +41,7 @@ public class DAOModel {
         this.model = model;
     }
 
-    public static String getYear() {
+    public String getYear() {
         return year;
     }
 
@@ -48,7 +49,7 @@ public class DAOModel {
         this.year = year;
     }
 
-    public static String getColor() {
+    public String getColor() {
         return color;
     }
 
@@ -56,4 +57,6 @@ public class DAOModel {
         this.color = color;
     }
 }
+
+
 
